@@ -2,26 +2,6 @@
 ####################################### (Intruduction)
 #########################################################
 ######### Question #* Say "Hello, World!" With Python
-from cmath import *
-import calendar
-from collections import deque
-from collections import ChainMap
-from itertools import chain
-from itertools import combinations
-from itertools import takewhile
-from itertools import zip_longest
-from itertools import groupby
-from itertools import product
-from math import atan, degrees
-from math import *
-import cmath
-from math import sqrt
-from collections import namedtuple
-from collections import Counter
-from collections import OrderedDict
-from itertools import permutations
-import textwrap
-from collections import defaultdict
 if __name__ == '__main__':
     print("Hello, World!")
 
