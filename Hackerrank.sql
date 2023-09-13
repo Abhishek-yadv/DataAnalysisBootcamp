@@ -2322,9 +2322,9 @@ ORDER BY Subq1.contest_id;
 
 # 2nd method with CTE method
 WITH SUM_View_Stats AS (
-SELECT challenge_id
-    , total_views = sum(total_views)
-    , total_unique_views = sum(total_unique_views)
+SELECT challenge_id,
+	   total_views = sum(total_views),
+       total_unique_views = sum(total_unique_views)
 FROM View_Stats 
 GROUP BY challenge_id
 ), SUM_Submission_Stats AS (
@@ -2569,6 +2569,7 @@ LIMIT 20;
 
 /*********** 58 (Print Prime Numbers) **************/
 /**************************************************/
+# 1st method By using recursive, GROUP_CONCAT clause
 WITH RECURSIVE num_list AS (
     SELECT 2 AS num
     UNION ALL
@@ -2584,12 +2585,55 @@ WHERE NOT EXISTS (
     WHERE nl.num < num_list.num AND num_list.num % nl.num = 0
 ) AND num_list.num <= 1000; 
 
+# OR
+WITH RECURSIVE t AS (
+  SELECT 2 AS number
+UNION ALL
+  SELECT number + 1 FROM t WHERE number < 1000
+)
+SELECT GROUP_CONCAT(number SEPARATOR '&') FROM t
+WHERE (
+  SELECT COUNT(*) FROM t t2
+  WHERE t.number % t2.number = 0
+) = 1;
 
-With recursive t as (select 2 as number 
-                      union 
-                      select number + 1  from t 
-                      where number < 1000)          
-select GROUP_CONCAT(number SEPARATOR '&') from t
-where (select count(*) from t t2 where t.number%t2.number=0) = 1;
+# Note whenever each or every comes in statement think group by and join
+# in string or text min funxn in minimum (lowest) value based on the lexicographical order and max vice versa
+# can't use alias within inline query bcz before this some other clause perform
+#  WHERE clause expects a single value in a column
+/*🔽FROM: Gathers all of the data
+ 
+🔽WHERE: Filters rows of data
 
+🔽GROUP BY: Groups rows together
 
+🔽HAVING: Filters grouped rows
+
+🔽SELECT: Specifies columns to display
+
+🔽ORDER BY: Rearranges the results
+/*
+# Just experimenting it's mnot hackerrank qustion
+SELECT continent, name, area
+FROM world x
+WHERE area = (
+    SELECT MAX(area)
+    FROM world y
+    WHERE y.continent = x.continent
+);
+SELECT w1.continent, w1.name, w1.area
+FROM world w1
+JOIN (
+    SELECT continent, MAX(area) AS max_area
+    FROM world
+    GROUP BY continent
+) w2
+ON w1.continent = w2.continent AND w1.area = w2.max_area;
+SELECT w1.continent, w1.name, w1.area
+FROM world w1
+JOIN (
+    SELECT continent, MAX(area) AS max_area
+    FROM world
+    GROUP BY continent
+) w2
+ON w1.continent = w2.continent AND w1.area = w2.max_area;
