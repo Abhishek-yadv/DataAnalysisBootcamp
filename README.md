@@ -1,5 +1,5 @@
 # Data Analysis Bootcamp
-[Data Analysis](/Certification.png)
+![Data Analysis](/Certification.png)
 
 ## Welcome!
 
