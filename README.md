@@ -31,7 +31,7 @@ As a passionate data enthusiast, I've carefully curated this repository to showc
 
 ## About Me:
 
-I am a dedicated and results-oriented data analyst with a strong passion for leveraging data to drive informed decision-making and business success. With a solid foundation in data analysis techniques and tools gained through the Data Analysis Bootcamp, I'm eager to contribute my skills and expertise to your organization.
+I am a dedicated and results-oriented data analyst with a strong passion for leveraging data to drive informed decision-making and business success. With a solid foundation in data analysis techniques and tools gained through the Data Analysis Bootcamp, Now excited to be part of any good organisation to contribute my skills and expertise.
 
 Feel free to explore the repository further to gain deeper insights into my capabilities and accomplishments.
 
