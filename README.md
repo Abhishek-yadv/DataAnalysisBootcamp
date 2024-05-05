@@ -1,5 +1,5 @@
 # Data Analysis Bootcamp
-![Data Analysis](C:\VsCode\DataAnalystProjectPortfolio\Abhishek Yadav.png)
+[Data Analysis](C:\VsCode\DataAnalystProjectPortfolio\Abhishek Yadav.png)
 
 ## Welcome!
 
