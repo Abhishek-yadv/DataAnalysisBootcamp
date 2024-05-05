@@ -37,4 +37,4 @@ Feel free to explore the repository further to gain deeper insights into my capa
 
 ---
 **Contact Information:**  
-[LinkedIn](https://www.linkedin.com/in/yourprofile) | [Email](mailto:youremail@example.com) | [Portfolio Website](https://yourportfolio.com)
+[LinkedIn](https://www.linkedin.com/in/abhishek-yadav-965b6b179/) | [Email](ay29020@gmail.com) | [Portfolio Website](https://yourportfolio.com)
