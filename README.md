@@ -1,5 +1,5 @@
 # Data Analysis Bootcamp
-![Data Analysis](/Certification.png)
+![Data Analysis](https://github.com/Abhishek-yadv/DataAnalysisBootcamp/assets/68497250/d90e11dc-6bdb-4902-a330-c224046f6105)
 
 ## Welcome!
 
